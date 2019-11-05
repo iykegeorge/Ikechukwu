@@ -1,0 +1,27 @@
+﻿@model IGUPatients.Models.DispensingUnit
+
+@{
+    ViewData["Title"] = "Details of Dispensing Unit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h2>Details of Dispensing Unit</h2>
+
+<div>
+    <h4>DispensingUnit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.DispensingCode)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DispensingCode)
+            </dd>
+        </dl>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DispensingCode">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
